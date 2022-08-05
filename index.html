@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Equaltion Flappy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css"
+      integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv"
+      crossorigin="anonymous"
+    />
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js"
+      integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+    <style>
+      h1[type="storke"] {
+        border: 2.2px solid black;
+        width: 420px;
+        height: 420px;
+      }
+
+      h4 {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        font-size: 42px;
+      }
+
+      #red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>0</h1>
+    <h1 type="storke">
+      <h4 type="en" id="player">a = &Sqrt;2</h4>
+      <h4 type="en" id="okopu">10 &ge; &Sqrt;22</h4>
+    </h1>
+    <button title="Left Arrow" id="left">Left</button>
+    <button title="Right Arrow" id="right">Right</button>
+    <button title="Up Arrow" id="up">Up</button>
+    <button title="Down Arrow" id="down">Down</button>
+    <button><a href="index.html">Play!</a></button>
+    <h2>
+      <a href="js/OmegaNum.js">Source to OmegaNum</a>
+      <span id="red">Warning:Disappear Long Lines</span>
+    </h2>
+    <h1>Formula</h1>
+    <h3>\(S = S + 1\) | Add The Score</h3>
+    <h3>\(S = 0\) | Reset The Game.</h3>
+  </body>
+</html>
+<script src="js/OmegaNum.js"></script>
+<script src="js/main.js"></script>
